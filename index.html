@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips for Financial Cybersecurity</title>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips for Financial Cybersecurity</title>
+    <!-- Connect External CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+</head>
+<body>
+
+    <!-- CBA 1: Header & Title -->
+    <header>
+        <h1>Tips for Financial Cybersecurity</h1>
+    </header>
+
+    <div class="container">
+        <!-- CBA 1 & 2: Cybersecurity Content -->
+        <section id="tips">
+            <h2>Essential Security Guidelines</h2>
+            <p>Protecting your personal and financial details online is crucial. Follow these best practices to ensure your digital banking security:</p>
+            <ul>
+                <li><strong>Use Strong Passwords:</strong> Create unique passwords combining uppercase, lowercase, numbers, and symbols. Never reuse banking passwords across other sites.</li>
+                <li><strong>Enable Multi-Factor Authentication (MFA):</strong> Always use MFA or 2FA on online accounts for an added layer of verification.</li>
+                <li><strong>Beware of Phishing:</strong> Commonwealth Bank will never ask for your NetBank password or OTP via SMS or email links.</li>
+                <li><strong>Keep Software Updated:</strong> Regularly update your operating system and mobile banking applications to patch security vulnerabilities.</li>
+            </ul>
+        </section>
+
+        <!-- CBA 3: Secure Hosting Architecture Proposal -->
+        <section id="proposal">
+            <h2>Secure Web Hosting Architecture Proposal</h2>
+            
+            <div class="proposal-meta">
+                <p><strong>TO:</strong> Engineering & Infrastructure Management, Commonwealth Bank</p>
+                <p><strong>FROM:</strong> Software Engineering Intern / Analyst</p>
+                <p><strong>SUBJECT:</strong> Secure Hosting & Edge Protection Strategy</p>
+            </div>
+
+            <h3>1. Executive Summary</h3>
+            <p>Although this financial cybersecurity portal currently serves static information without storing sensitive user data, planning an enterprise-grade secure hosting infrastructure is essential. Future application scope may include interactive user authentication, financial tools, and customer data collection.</p>
+
+            <h3>2. Hosting Environment Recommendation</h3>
+            <p>We recommend leveraging a Cloud Storage (AWS S3 / Azure Blob) backed by a Content Delivery Network (AWS CloudFront / Cloudflare Edge). This provides high availability, low latency, and removes server-side execution attack vectors.</p>
+
+            <h3>3. Transport Security & SSL/TLS</h3>
+            <p>All HTTP traffic will automatically redirect to HTTPS using <strong>TLS 1.3</strong> encryption. Automated SSL certificate renewal via AWS Certificate Manager (ACM) ensures zero downtime and automated key rotation.</p>
+
+            <h3>4. Web Application Firewall (WAF) & Edge Security</h3>
+            <p>Deploying AWS WAF at the CloudFront distribution level to filter malicious traffic, restrict rate limits against DDoS attacks, and enforce Content Security Policies (CSP) to mitigate Cross-Site Scripting (XSS).</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Commonwealth Bank Software Engineering Virtual Simulation | Built for Financial Security Awareness</p>
+    </footer>
+
+</body>
+</html>
